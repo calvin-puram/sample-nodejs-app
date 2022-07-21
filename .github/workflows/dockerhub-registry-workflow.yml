@@ -9,8 +9,6 @@ on:
 jobs:
   build:
     runs-on: [self-hosted, build]
-    container:
-      image: ubuntu
     steps:
       - uses: actions/checkout@v2
 
@@ -19,9 +17,6 @@ jobs:
 
   test:
     runs-on: [self-hosted, test]
-    container:
-      image: ubuntu
-    needs: [build]
     steps:
       - uses: actions/checkout@v2
 
@@ -30,8 +25,6 @@ jobs:
 
   publish:
     runs-on: [self-hosted, publish]
-    container:
-      image: centos
     needs: [build, test]
     steps:
       - uses: actions/checkout@v2
