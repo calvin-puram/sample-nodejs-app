@@ -30,5 +30,21 @@ jobs:
 
       - name: run a one-line script
         run: echo "this runner will be destroy soon"
+        
+  test23:
+    runs-on: [self-hosted]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: run a one-line script
+        run: echo "this runner will be destroy soon"
+        
+  publish23:
+    runs-on: [self-hosted]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: run a one-line script
+        run: echo "this runner will be destroy soon"
 
  
