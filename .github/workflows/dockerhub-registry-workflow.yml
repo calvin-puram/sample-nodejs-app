@@ -11,6 +11,10 @@ jobs:
     runs-on: [self-hosted]
     steps:
       - uses: actions/checkout@v2
+      
+      - name: Sleep for 30 seconds
+        run: sleep 3m
+        shell: bash
 
       - name: run a one-line script
         run: echo "this runner will be destroy soon"
@@ -19,6 +23,10 @@ jobs:
     runs-on: [self-hosted]
     steps:
       - uses: actions/checkout@v2
+      
+      - name: Sleep for 30 seconds
+        run: sleep 4m
+        shell: bash
 
       - name: run a one-line script
         run: echo "this runner will be destroy soon"
@@ -27,6 +35,10 @@ jobs:
     runs-on: [self-hosted]
     steps:
       - uses: actions/checkout@v2
+      
+      - name: Sleep for 30 seconds
+        run: sleep 5m
+        shell: bash
 
       - name: run a one-line script
         run: echo "this runner will be destroy soon"
@@ -35,6 +47,10 @@ jobs:
     runs-on: [self-hosted]
     steps:
       - uses: actions/checkout@v2
+      
+      - name: Sleep for 30 seconds
+        run: sleep 6m
+        shell: bash
 
       - name: run a one-line script
         run: echo "this runner will be destroy soon"
@@ -43,6 +59,10 @@ jobs:
     runs-on: [self-hosted]
     steps:
       - uses: actions/checkout@v2
+      
+      - name: Sleep for 30 seconds
+        run: sleep 7m
+        shell: bash
 
       - name: run a one-line script
         run: echo "this runner will be destroy soon"
